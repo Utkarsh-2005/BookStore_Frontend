@@ -22,7 +22,7 @@ const CreateBooks = () => {
     };
     setLoading(true);
     axios
-    .post('https://booksapi-production-de10.up.railway.app/books', data)
+    .post('https://booksapi-21p0.onrender.com/books', data)
     .then(()=> {
       setLoading(false);
       enqueueSnackbar('Book created successfully', {variant: 'success'})

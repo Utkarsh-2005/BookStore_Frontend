@@ -16,7 +16,7 @@ const EditBook = () => {
   const {id} = useParams();
   useEffect(() => {
     setLoading(true);
-    axios.get(`https://booksapi-production-de10.up.railway.app/books/${id}`)
+    axios.get(`https://booksapi-21p0.onrender.com/books/${id}`)
     .then((response) => {
       setAuthor(response.data.author);
       setPublishYear(response.data.publishYear);

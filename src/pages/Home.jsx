@@ -15,7 +15,7 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     axios
-    .get('https://booksapi-production-de10.up.railway.app/books')
+    .get('https://booksapi-21p0.onrender.com/books')
     .then((response) => {
       setBooks(response.data.data); 
       setLoading(false);
